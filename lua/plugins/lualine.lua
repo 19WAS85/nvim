@@ -1,3 +1,5 @@
+-- https://github.com/nvim-lualine/lualine.nvim/blob/master/examples/slanted-gaps.lua
+
 local colors = {
   red = '#ca1243',
   grey = '#a0a1a7',
