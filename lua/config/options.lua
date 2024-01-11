@@ -7,3 +7,4 @@ vim.g.autoformat = false
 vim.opt.relativenumber = false
 vim.opt.undofile = false
 vim.opt.conceallevel = 0
+vim.opt.guicursor = vim.opt.guicursor + 'a:blinkon100'
