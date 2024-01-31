@@ -14,5 +14,7 @@ map("n", "<S-q>", function()
 end, { desc = "Delete Buffer" })
 
 -- NEOTREE
+map("n", "|", ":Neotree<cr>", { desc = "Neotree Focus" })
 
-map("n", "\\", ":Neotree<cr>", { desc = "Neotree Focus" })
+-- SEARCH
+map("n", "<C-f>", ":%s/", { desc = "Next buffer" })
