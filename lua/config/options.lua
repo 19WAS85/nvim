@@ -8,3 +8,4 @@ vim.opt.relativenumber = false
 vim.opt.undofile = false
 vim.opt.conceallevel = 0
 vim.opt.guicursor = vim.opt.guicursor + 'a:blinkon100'
+vim.opt.swapfile = false
