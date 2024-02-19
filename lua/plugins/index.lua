@@ -3,5 +3,5 @@ return {
   { "folke/flash.nvim", opts = { modes = { search = { enabled = false } } } },
   { "lunacookies/vim-colors-xcode" },
   { "rose-pine/neovim" },
-  { "LazyVim/LazyVim", opts = { colorscheme = "rose-pine" } },
+  { "LazyVim/LazyVim", opts = { colorscheme = "rose-pine-moon" } },
 }
