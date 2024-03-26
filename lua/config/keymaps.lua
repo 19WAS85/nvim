@@ -6,8 +6,8 @@ local map = vim.keymap.set
 
 -- BUFFERS
 
-map("n", "<tab>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next buffer" })
-map("n", "<S-tab>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev buffer" })
+map("n", "<tab>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next Buffer" })
+map("n", "<S-tab>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev Buffer" })
 
 map("n", "<S-q>", function()
   require("mini.bufremove").delete(0, true)
@@ -17,4 +17,4 @@ end, { desc = "Delete Buffer" })
 map("n", "|", ":Neotree<cr>", { desc = "Neotree Focus" })
 
 -- SEARCH
-map("n", "<C-f>", ":%s/", { desc = "Next buffer" })
+map("n", "<C-f>", ":%s/", { desc = "Quick Find" })
