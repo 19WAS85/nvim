@@ -4,21 +4,21 @@ return {
   { "folke/flash.nvim", opts = { modes = { search = { enabled = false } } } },
 
   -- Colors
-  { "lunacookies/vim-colors-xcode" },
   { "rose-pine/neovim" },
-  { "preservim/vim-colors-pencil" },
-
-  -- Diff
-  { "rhysd/conflict-marker.vim" },
+  { "lunacookies/vim-colors-xcode" },
+  { "miikanissi/modus-themes.nvim" },
+  { "dracula/vim" },
 
   -- Config
   {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "rose-pine",
-      -- colorscheme = "rose-pine-dawn",
-      colorscheme = "rose-pine-moon",
+      colorscheme = "rose-pine-dawn",
+      -- colorscheme = "rose-pine-moon",
       -- colorscheme = "xcodelight",
-    }
+      -- colorscheme = "modus",
+      -- colorscheme = "dracula",
+    },
   },
 }

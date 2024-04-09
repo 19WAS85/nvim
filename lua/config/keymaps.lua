@@ -17,4 +17,4 @@ end, { desc = "Delete Buffer" })
 map("n", "|", ":Neotree<cr>", { desc = "Neotree Focus" })
 
 -- SEARCH
-map("n", "<C-f>", ":%s/", { desc = "Quick Find" })
+map("n", "<C-f>", ":%s/", { desc = "Quick Find Replace" })
