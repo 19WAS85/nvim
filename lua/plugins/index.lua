@@ -9,16 +9,18 @@ return {
   { "miikanissi/modus-themes.nvim" },
   { "dracula/vim" },
 
-  -- Config
+  -- LazyVim
   {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "rose-pine",
-      colorscheme = "rose-pine-dawn",
-      -- colorscheme = "rose-pine-moon",
+      -- colorscheme = "rose-pine-dawn",
+      colorscheme = "rose-pine-moon",
       -- colorscheme = "xcodelight",
       -- colorscheme = "modus",
       -- colorscheme = "dracula",
     },
   },
 }
+
+
