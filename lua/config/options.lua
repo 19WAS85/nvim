@@ -7,7 +7,6 @@ vim.g.autoformat = false
 vim.opt.cursorline = false
 vim.opt.guicursor = vim.opt.guicursor + "a:blinkon100"
 vim.opt.list = false
-vim.opt.pumblend = 0
 vim.opt.relativenumber = false
 vim.opt.spelllang = {}
 vim.opt.swapfile = false
