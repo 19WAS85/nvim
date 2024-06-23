@@ -4,8 +4,10 @@
 
 vim.g.autoformat = false
 
+vim.opt.guicursor = vim.opt.guicursor + 'a:blinkon100'
+
+vim.opt.colorcolumn = '80'
 vim.opt.cursorline = false
-vim.opt.guicursor = vim.opt.guicursor + "a:blinkon100"
 vim.opt.list = false
 vim.opt.relativenumber = false
 vim.opt.spelllang = {}
