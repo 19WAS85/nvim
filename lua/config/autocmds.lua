@@ -2,7 +2,7 @@
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
 
--- github theme ---------------------------------------------------------------
+-- GITHUB THEME ---------------------------------------------------------------
 
 local github_theme = function ()
   vim.cmd('hi Comment guifg=#999988')
@@ -50,7 +50,7 @@ vim.api.nvim_create_autocmd({ "ColorScheme" }, {
   end,
 })
 
--- telescope multiselection ---------------------------------------------------
+-- TELESCOPE MULTISELECT ------------------------------------------------------
 
 local select_one_or_multi = function(prompt_bufnr)
   local picker = require('telescope.actions.state').get_current_picker(prompt_bufnr)

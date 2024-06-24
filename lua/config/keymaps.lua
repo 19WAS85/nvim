@@ -4,15 +4,15 @@
 
 local map = vim.keymap.set
 
--- BUFFERS
+-- BUFFERS --------------------------------------------------------------------
 
 map("n", "<tab>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next Buffer" })
 map("n", "<S-tab>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev Buffer" })
 
 map("n", "<S-q>", LazyVim.ui.bufremove, { desc = "Delete Buffer" })
 
--- NEOTREE
-map("n", "|", ":Neotree<cr>", { desc = "Neotree Focus" })
-
--- SEARCH
+-- REPLACE --------------------------------------------------------------------
 map("n", "<C-f>", ":%s/", { desc = "Quick Find Replace" })
+
+-- NEOTREE --------------------------------------------------------------------
+map("n", "|", ":Neotree<cr>", { desc = "Neotree Focus" })
