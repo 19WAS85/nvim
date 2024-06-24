@@ -7,21 +7,12 @@ return {
   { "mg979/vim-visual-multi" },
 
   -- ADD COLORS ---------------------------------------------------------------
-  { "rose-pine/neovim" },
-  { "lunacookies/vim-colors-xcode" },
   { "projekt0n/github-nvim-theme" },
+  { "rose-pine/neovim" },
 
   -- EDIT ---------------------------------------------------------------------
   { "hrsh7th/nvim-cmp", opts = { completion = { autocomplete = false } } },
 
   -- EDIT LAZYVIM -------------------------------------------------------------
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      -- colorscheme = "rose-pine-dawn",
-      -- colorscheme = "rose-pine-moon",
-      -- colorscheme = "xcodelight"
-      colorscheme = "github_light"
-    },
-  },
+  { "LazyVim/LazyVim", opts = { colorscheme = "github_light" } },
 }
