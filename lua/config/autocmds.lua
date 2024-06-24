@@ -25,26 +25,30 @@ local github_theme = function ()
   vim.cmd('hi Statement guifg=#1f2328')
   vim.cmd('hi String guifg=#d01040')
   vim.cmd('hi Type guifg=#008080')
+  vim.cmd('hi Visual guifg=#ffffff guibg=#445588 gui=italic')
   vim.cmd('hi @constant.builtin guifg=#1f2328 gui=bold')
   vim.cmd('hi @keyword.exception guifg=#1f2328 gui=bold')
   vim.cmd('hi @keyword.function guifg=#1f2328 gui=bold')
   vim.cmd('hi @keyword.operator guifg=#1f2328 gui=bold')
-  vim.cmd('hi @markup.heading gui=bold')
-  vim.cmd('hi @punctuation.bracket guifg=#666666')
-  vim.cmd('hi @punctuation.delimiter guifg=#666666')
-  vim.cmd('hi @type guifg=#445588')
-  vim.cmd('hi @type.builtin guifg=#008080')
+  vim.cmd('hi @markup.heading guifg=#1f2328 gui=bold')
+  vim.cmd('hi @markup.link guifg=#999988')
+  vim.cmd('hi @markup.link.label guifg=#990073')
+  vim.cmd('hi @markup.list guifg=#999988 gui=bold')
+  vim.cmd('hi @punctuation guifg=#1f2328')
+  vim.cmd('hi @punctuation.special guifg=#999988')
+  vim.cmd('hi @type guifg=#008080')
+  vim.cmd('hi @type.builtin guifg=#445588')
   vim.cmd('hi @variable.builtin guifg=#1f2328 gui=bold')
   vim.cmd('hi @variable.member guifg=#990073')
 end
+
+github_theme()
 
 vim.api.nvim_create_autocmd({ "ColorScheme" }, {
   callback = function()
     github_theme()
   end,
 })
-
-github_theme()
 
 -- telescope multiselection ---------------------------------------------------
 
