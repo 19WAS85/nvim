@@ -1,16 +1,20 @@
 return {
-  -- Disable
+
+  -- DISABLE
   { "echasnovski/mini.pairs", enabled = false },
 
-  -- completion
-  { "hrsh7th/nvim-cmp", opts = { completion = { autocomplete = false } } },
+  -- ADD
+  { "mg979/vim-visual-multi" },
 
-  -- Colors
+  -- ADD: Colors
   { "rose-pine/neovim" },
   { "lunacookies/vim-colors-xcode" },
   { "projekt0n/github-nvim-theme" },
 
-  -- LazyVim
+  -- Edit
+  { "hrsh7th/nvim-cmp", opts = { completion = { autocomplete = false } } },
+
+  -- Edit: LazyVim
   {
     "LazyVim/LazyVim",
     opts = {
@@ -21,5 +25,3 @@ return {
     },
   },
 }
-
-
