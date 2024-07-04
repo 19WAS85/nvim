@@ -1,5 +1,4 @@
 return {
-
   -- DISABLE ------------------------------------------------------------------
   { "echasnovski/mini.pairs", enabled = false },
 
@@ -12,7 +11,4 @@ return {
 
   -- EDIT ---------------------------------------------------------------------
   { "hrsh7th/nvim-cmp", opts = { completion = { autocomplete = false } } },
-
-  -- EDIT LAZYVIM -------------------------------------------------------------
-  { "LazyVim/LazyVim", opts = { colorscheme = "github_light" } },
 }

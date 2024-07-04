@@ -1,4 +1,4 @@
-local github_theme = function ()
+local set_colors = function ()
   vim.cmd('hi Comment guifg=#999988')
   vim.cmd('hi Conditional guifg=#1f2328 gui=bold')
   vim.cmd('hi Constant guifg=#445588')
@@ -35,12 +35,14 @@ local github_theme = function ()
   vim.cmd('hi @variable.member guifg=#990073')
 end
 
-github_theme()
+set_colors()
 
 vim.api.nvim_create_autocmd({ 'ColorScheme' }, {
   callback = function()
-    github_theme()
+    set_colors()
   end,
 })
 
-return { }
+return {
+  { "LazyVim/LazyVim", opts = { colorscheme = "github_light" } },
+}
