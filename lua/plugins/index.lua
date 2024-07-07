@@ -1,12 +1,11 @@
 return {
   -- DISABLE ------------------------------------------------------------------
   { "echasnovski/mini.pairs", enabled = false },
-  { "garymjr/nvim-snippets", enabled = false },
 
   -- ADD ----------------------------------------------------------------------
   { "mg979/vim-visual-multi" },
 
-  -- ADD COLORS ---------------------------------------------------------------
+  -- COLORS ---------------------------------------------------------------
   { "projekt0n/github-nvim-theme" },
   { "rose-pine/neovim" },
 
