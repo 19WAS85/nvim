@@ -5,4 +5,4 @@
 + Custom Github theme
 + Few plugins
 
-Just clone it on `/.config/nvim` to start.
+Just clone it on `~/.config/nvim` to start.
