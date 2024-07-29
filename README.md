@@ -1,6 +1,6 @@
-# nvim
+# My nvim Config
 
-My personal white background nvim configuration:
+White background nvim configuration with:
 
 + LazyVim
 + Few plugins and options
