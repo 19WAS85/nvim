@@ -3,7 +3,8 @@
 White background nvim configuration with:
 
 + LazyVim
-+ Few plugins and options
-+ Customized Github theme
++ Some options
++ Few plugins
++ GitHub theme
 
 Just clone it on `~/.config/nvim` to start.
