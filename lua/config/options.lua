@@ -13,3 +13,5 @@ vim.opt.relativenumber = false
 vim.opt.spelllang = {}
 vim.opt.swapfile = false
 vim.opt.undofile = false
+
+vim.g.root_spec = { 'cwd' }
