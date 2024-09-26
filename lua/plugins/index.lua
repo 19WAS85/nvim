@@ -11,23 +11,35 @@ return {
 
   -- EDIT ---------------------------------------------------------------------
 
-  { "hrsh7th/nvim-cmp", opts = { completion = { autocomplete = false } } },
+  {
+    "nvimdev/dashboard-nvim",
+    lazy = false,
+    opts = function(_, opts)
+      opts.config.header = { "", "", "https://www.lazyvim.org/", "", "" }
+    end,
+  },
 
-  { "nvim-lspconfig", opts = { inlay_hints = { enabled = false } } },
+  {
+    "nvim-lspconfig",
+    event = "VeryLazy",
+    opts = function(_, opts)
+      opts.inlay_hints.enabled = false
+    end,
+  },
+
+  {
+    "hrsh7th/nvim-cmp",
+    event = "VeryLazy",
+    opts = function(_, opts)
+      opts.completion.autocomplete = false
+    end,
+  },
 
   {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     opts = function(_, opts)
       table.remove(opts.sections.lualine_c)
-    end,
-  },
-
-  {
-    "nvimdev/dashboard-nvim",
-    lazy = false,
-    opts = function(_, opts)
-      opts.config.header = { "", "", "https://www.lazyvim.org/", "", "" }
     end,
   }
 }
