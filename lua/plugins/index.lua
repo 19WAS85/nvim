@@ -41,5 +41,13 @@ return {
     opts = function(_, opts)
       table.remove(opts.sections.lualine_c)
     end,
+  },
+
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    event = "VeryLazy",
+    opts = function(_, opts)
+      opts.filesystem.group_empty_dirs = true
+    end,
   }
 }
