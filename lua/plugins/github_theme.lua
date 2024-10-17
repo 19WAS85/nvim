@@ -16,6 +16,7 @@ local set_colors = function()
   vim.cmd("hi Search guifg=#1f2328 guibg=#ffff00")
 
   vim.cmd("hi @lsp.type.class.java guifg=#008080")
+  vim.cmd("hi @lsp.type.class.typescript guifg=#008080")
   vim.cmd("hi @type guifg=#008080")
   vim.cmd("hi Number guifg=#008080")
   vim.cmd("hi Type guifg=#008080")
