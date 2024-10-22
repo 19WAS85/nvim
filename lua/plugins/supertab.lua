@@ -15,10 +15,6 @@ return {
         if cmp.visible() then
           -- You could replace select_next_item() with confirm({ select = true }) to get VS Code autocompletion behavior
           cmp.select_next_item()
-        elseif vim.snippet.active({ direction = 1 }) then
-          vim.schedule(function()
-            vim.snippet.jump(1)
-          end)
         elseif has_words_before() then
           cmp.complete()
         else
@@ -28,10 +24,6 @@ return {
       ["<S-Tab>"] = cmp.mapping(function(fallback)
         if cmp.visible() then
           cmp.select_prev_item()
-        elseif vim.snippet.active({ direction = -1 }) then
-          vim.schedule(function()
-            vim.snippet.jump(-1)
-          end)
         else
           fallback()
         end
