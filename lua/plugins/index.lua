@@ -12,15 +12,6 @@ return {
   -- EDIT ---------------------------------------------------------------------
 
   {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        cds_lsp = {},
-      },
-    },
-  },
-
-  {
     "nvimdev/dashboard-nvim",
     lazy = false,
     opts = function(_, opts)
