@@ -1,11 +1,14 @@
 return {
   -- DISABLE ------------------------------------------------------------------
+
   { "echasnovski/mini.pairs", enabled = false },
 
   -- ADD ----------------------------------------------------------------------
+
   { "mg979/vim-visual-multi" },
 
   -- COLORS -------------------------------------------------------------------
+
   { "projekt0n/github-nvim-theme" },
   { "rose-pine/neovim" },
 
@@ -49,5 +52,5 @@ return {
     opts = function(_, opts)
       opts.filesystem.group_empty_dirs = true
     end,
-  }
+  },
 }
