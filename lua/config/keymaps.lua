@@ -12,7 +12,9 @@ map("n", "<S-tab>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev Buffer" })
 map("n", "<S-q>", LazyVim.ui.bufremove, { desc = "Delete Buffer" })
 
 -- REPLACE --------------------------------------------------------------------
+
 map("n", "<C-f>", ":%s/", { desc = "Quick Find Replace" })
 
 -- NEOTREE --------------------------------------------------------------------
-map("n", "|", ":Neotree<cr>", { desc = "Neotree Focus" })
+
+map("n", "|", ":Neotree toggle<cr>", { desc = "Neotree Focus" })
