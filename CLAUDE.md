@@ -25,6 +25,10 @@ LazyVim uses a layered configuration model:
 
 `lazy-lock.json` pins every plugin to a specific commit. Commit it to reproduce the exact plugin state. Update it by running `:Lazy sync` or `:Lazy update` inside Neovim.
 
+## Installed Plugins
+
+Before making any configuration change, always check which plugins are already installed by reading `lazy-lock.json` and the existing specs in `lua/plugins/`. Never suggest or add a plugin that duplicates functionality already provided by an installed one. Prefer extending or overriding existing plugin config over adding a new dependency.
+
 ## Key Files Not to Modify Directly
 
 - `lazyvim.json` — managed by LazyVim's internal version/news tracking; do not edit by hand
