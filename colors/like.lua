@@ -41,7 +41,7 @@ local p = {
   -- diagnostics / git
   error        = "#a61717",
   error_bg     = "#e3d2d2",
-  warning      = "#aa0000",
+  warning      = "#b08800",
   diff_add     = "#ddffdd",
   diff_delete  = "#ffdddd",
   diff_add_fg    = "#009926",
