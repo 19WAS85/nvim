@@ -201,4 +201,45 @@ h.GitSignsAddNr    = { fg = p.diff_add_fg }
 h.GitSignsChangeNr = { fg = p.builtin }
 h.GitSignsDeleteNr = { fg = p.diff_delete_fg }
 
+-- Telescope
+h.TelescopeNormal        = { fg = p.fg,        bg = p.bg_dark }
+h.TelescopeBorder        = { fg = p.fg_gutter,  bg = p.bg_dark }
+h.TelescopePromptNormal  = { fg = p.fg,        bg = p.bg }
+h.TelescopePromptBorder  = { fg = p.fg_gutter,  bg = p.bg }
+h.TelescopeResultsNormal = { fg = p.fg,        bg = p.bg_dark }
+h.TelescopePreviewNormal = { fg = p.fg,        bg = p.bg_dark }
+h.TelescopeMatching      = { fg = p.func,      bold = true }
+h.TelescopeSelection     = { bg = p.bg_visual }
+
+-- which-key
+h.WhichKeyFloat  = { bg = p.bg_dark }
+h.WhichKeyBorder = { fg = p.fg_gutter, bg = p.bg_dark }
+h.WhichKey       = { fg = p.func }
+h.WhichKeyGroup  = { fg = p.type, bold = true }
+h.WhichKeyDesc   = { fg = p.fg }
+
+-- lazy.nvim
+h.LazyNormal       = { fg = p.fg,  bg = p.bg_dark }
+h.LazyButton       = { fg = p.fg,  bg = p.bg_dark }
+h.LazyButtonActive = { fg = p.fg,  bg = p.bg_visual, bold = true }
+
+-- mini.icons
+h.MiniIconsBlue   = { fg = p.builtin }
+h.MiniIconsGreen  = { fg = p.regex }
+h.MiniIconsRed    = { fg = p.func }
+h.MiniIconsYellow = { fg = p.warning }
+
+-- noice
+h.NoicePopup       = { fg = p.fg,        bg = p.bg_dark }
+h.NoicePopupBorder = { fg = p.fg_gutter,  bg = p.bg_dark }
+h.NoiceCmdline     = { fg = p.fg,        bg = p.bg_dark }
+h.NoiceCmdlineIcon = { fg = p.builtin }
+
+-- neo-tree
+h.NeoTreeNormal        = { fg = p.fg,       bg = p.bg_dark }
+h.NeoTreeNormalNC      = { fg = p.fg_dark,  bg = p.bg_dark }
+h.NeoTreeWinSeparator  = { fg = p.fg_gutter, bg = p.bg_dark }
+h.NeoTreeDirectoryIcon = { fg = p.builtin }
+h.NeoTreeRootName      = { fg = p.type,     bold = true }
+
 -- Section 3: Application (populated in Task 6)
