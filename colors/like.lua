@@ -172,4 +172,33 @@ h["@text.title"]            = { fg = p.type,    bold = true }
 h["@text.emphasis"]         = { italic = true }
 h["@text.strong"]           = { bold = true }
 
+-- LSP diagnostics
+h.DiagnosticError            = { fg = p.error }
+h.DiagnosticWarn             = { fg = p.warning }
+h.DiagnosticInfo             = { fg = p.builtin }
+h.DiagnosticHint             = { fg = p.variable }
+h.DiagnosticUnderlineError   = { underline = true, sp = p.error }
+h.DiagnosticUnderlineWarn    = { underline = true, sp = p.warning }
+h.DiagnosticUnderlineInfo    = { underline = true, sp = p.builtin }
+h.DiagnosticUnderlineHint    = { underline = true, sp = p.variable }
+h.DiagnosticVirtualTextError = { fg = p.error,    bg = p.error_bg }
+h.DiagnosticVirtualTextWarn  = { fg = p.warning,  bg = p.bg_dark }
+h.DiagnosticVirtualTextInfo  = { fg = p.builtin,  bg = p.bg_dark }
+h.DiagnosticVirtualTextHint  = { fg = p.variable, bg = p.bg_dark }
+h.LspReferenceText           = { bg = p.bg_visual }
+h.LspReferenceRead           = { bg = p.bg_visual }
+h.LspReferenceWrite          = { bg = p.bg_visual, bold = true }
+
+-- Git / Diff
+h.DiffAdd          = { bg = p.diff_add }
+h.DiffDelete       = { bg = p.diff_delete }
+h.DiffChange       = { bg = p.bg_dark }
+h.DiffText         = { bg = p.bg_highlight }
+h.GitSignsAdd      = { fg = p.diff_add_fg }
+h.GitSignsChange   = { fg = p.builtin }
+h.GitSignsDelete   = { fg = p.diff_delete_fg }
+h.GitSignsAddNr    = { fg = p.diff_add_fg }
+h.GitSignsChangeNr = { fg = p.builtin }
+h.GitSignsDeleteNr = { fg = p.diff_delete_fg }
+
 -- Section 3: Application (populated in Task 6)
