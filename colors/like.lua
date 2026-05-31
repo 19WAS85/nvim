@@ -242,4 +242,29 @@ h.NeoTreeWinSeparator  = { fg = p.fg_gutter, bg = p.bg_dark }
 h.NeoTreeDirectoryIcon = { fg = p.builtin }
 h.NeoTreeRootName      = { fg = p.type,     bold = true }
 
--- Section 3: Application (populated in Task 6)
+-- Section 3: Apply highlights
+for group, opts in pairs(h) do
+  if opts.link then
+    vim.api.nvim_set_hl(0, group, { link = opts.link })
+  else
+    vim.api.nvim_set_hl(0, group, opts)
+  end
+end
+
+-- Terminal colors (16-color palette)
+vim.g.terminal_color_0  = p.fg_gutter   -- black
+vim.g.terminal_color_8  = "#999999"     -- black bright
+vim.g.terminal_color_1  = p.func        -- red
+vim.g.terminal_color_9  = "#cc3333"     -- red bright
+vim.g.terminal_color_2  = p.regex       -- green
+vim.g.terminal_color_10 = p.diff_add_fg -- green bright
+vim.g.terminal_color_3  = p.warning     -- yellow
+vim.g.terminal_color_11 = "#cc6600"     -- yellow bright
+vim.g.terminal_color_4  = p.tag         -- blue
+vim.g.terminal_color_12 = p.builtin     -- blue bright
+vim.g.terminal_color_5  = p.symbol      -- magenta
+vim.g.terminal_color_13 = p.entity      -- magenta bright
+vim.g.terminal_color_6  = p.number      -- cyan
+vim.g.terminal_color_14 = p.variable    -- cyan bright
+vim.g.terminal_color_7  = p.fg_dark     -- white
+vim.g.terminal_color_15 = p.fg          -- white bright
