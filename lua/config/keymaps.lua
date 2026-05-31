@@ -4,7 +4,11 @@
 
 vim.keymap.set("n", "<Tab>", "<cmd>bnext<cr>", { desc = "Next buffer" })
 vim.keymap.set("n", "<S-Tab>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
-vim.keymap.set("n", "<S-q>", function() Snacks.bufdelete.delete() end, { desc = "Close buffer" })
+
+vim.keymap.set("n", "<S-q>", function()
+  Snacks.bufdelete.delete()
+end, { desc = "Close buffer" })
+
 vim.keymap.set("n", "|", function()
   local explorer = Snacks.picker.get({ source = "explorer" })[1]
   if explorer then
