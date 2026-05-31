@@ -23,6 +23,7 @@ local p = {
   fg_gutter    = "#bbbbbb",
   -- syntax
   comment      = "#999988",
+  comment_gray = "#999999",  -- comment.preproc / comment.special
   keyword      = "#000000",
   string       = "#d01040",
   number       = "#009999",
@@ -93,7 +94,9 @@ h.WarningMsg      = { fg = p.warning }
 h.ErrorMsg        = { fg = p.error }
 
 -- Legacy syntax
-h.Comment         = { fg = p.comment, italic = true }
+h.Comment         = { fg = p.comment,      italic = true }
+h.CommentPreProc  = { fg = p.comment_gray, italic = true }
+h.SpecialComment  = { fg = p.comment_gray, bold = true }
 h.Keyword         = { fg = p.keyword, bold = true }
 h.KeywordFunction = { fg = p.keyword, bold = true }
 h.KeywordReturn   = { fg = p.keyword, bold = true }
@@ -113,7 +116,6 @@ h.Identifier      = { fg = p.variable }
 h.Constant        = { fg = p.constant }
 h.Special         = { fg = p.symbol }
 h.SpecialChar     = { fg = p.string }
-h.SpecialComment  = { fg = p.comment, bold = true }
 h.Tag             = { fg = p.tag }
 h.Attribute       = { fg = p.variable }
 h.PreProc         = { fg = p.keyword }
@@ -140,7 +142,7 @@ h["@keyword.return"]        = { link = "KeywordReturn" }
 h["@keyword.operator"]      = { link = "KeywordOperator" }
 h["@string"]                = { link = "String" }
 h["@string.regex"]          = { fg = p.regex }
-h["@string.escape"]         = { fg = p.symbol }
+h["@string.escape"]         = { fg = p.string }
 h["@number"]                = { link = "Number" }
 h["@float"]                 = { link = "Float" }
 h["@boolean"]               = { link = "Boolean" }
@@ -153,7 +155,7 @@ h["@method"]                = { link = "Method" }
 h["@type"]                  = { link = "Type" }
 h["@type.builtin"]          = { fg = p.type, italic = true }
 h["@variable"]              = { fg = p.variable }
-h["@variable.builtin"]      = { fg = p.builtin, italic = true }
+h["@variable.builtin"]      = { fg = "#999999", italic = true }
 h["@constant"]              = { link = "Constant" }
 h["@constant.builtin"]      = { fg = p.constant, bold = true }
 h["@namespace"]             = { fg = p.namespace }
@@ -168,9 +170,11 @@ h["@property"]              = { fg = p.variable }
 h["@symbol"]                = { fg = p.symbol }
 h["@text.literal"]          = { fg = p.string }
 h["@text.uri"]              = { fg = p.builtin, underline = true }
-h["@text.title"]            = { fg = p.type,    bold = true }
-h["@text.emphasis"]         = { italic = true }
+h["@text.title"]            = { fg = "#999999",  bold = true }
+h["@text.reference"]        = { fg = "#aaaaaa" }
+h["@text.emphasis"]         = { fg = p.fg, italic = true }
 h["@text.strong"]           = { bold = true }
+h["@text.output"]           = { fg = "#888888" }
 
 -- LSP diagnostics
 h.DiagnosticError            = { fg = p.error }
