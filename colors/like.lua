@@ -15,7 +15,7 @@ local p = {
   bg           = "#ffffff",
   bg_dark      = "#f6f8fa",
   bg_highlight = "#ffffcc",
-  bg_visual    = "#e8f0fe",
+  bg_visual    = "#fefbd8",
   bg_search    = "#fff3b0",
   -- foregrounds
   fg           = "#000000",
