@@ -48,6 +48,48 @@ local p = {
   none         = "NONE",
 }
 
--- Section 2: Highlights (populated in Tasks 2–5)
+-- Section 2: Highlights
+local h = {}
+
+-- Base UI
+h.Normal          = { fg = p.fg,        bg = p.bg }
+h.NormalFloat     = { fg = p.fg,        bg = p.bg_dark }
+h.NormalNC        = { fg = p.fg_dark,   bg = p.bg }
+h.LineNr          = { fg = p.fg_gutter }
+h.CursorLine      = { bg = p.bg_dark }
+h.CursorLineNr    = { fg = p.fg,        bold = true }
+h.ColorColumn     = { bg = p.bg_dark }
+h.SignColumn      = { fg = p.fg_gutter, bg = p.bg }
+h.FoldColumn      = { fg = p.fg_gutter, bg = p.bg }
+h.Folded          = { fg = p.comment,   bg = p.bg_dark }
+h.Visual          = { bg = p.bg_visual }
+h.VisualNOS       = { bg = p.bg_visual }
+h.Search          = { fg = p.fg,        bg = p.bg_search }
+h.IncSearch       = { fg = p.fg,        bg = p.bg_highlight, bold = true }
+h.MatchParen      = { fg = p.func,      bold = true, underline = true }
+h.Pmenu           = { fg = p.fg,        bg = p.bg_dark }
+h.PmenuSel        = { fg = p.fg,        bg = p.bg_visual, bold = true }
+h.PmenuSbar       = { bg = p.bg_dark }
+h.PmenuThumb      = { bg = p.fg_gutter }
+h.StatusLine      = { fg = p.fg_dark,   bg = p.bg_dark }
+h.StatusLineNC    = { fg = p.fg_gutter, bg = p.bg_dark }
+h.WinSeparator    = { fg = p.fg_gutter }
+h.VertSplit       = { fg = p.fg_gutter }
+h.TabLine         = { fg = p.fg_dark,   bg = p.bg_dark }
+h.TabLineSel      = { fg = p.fg,        bg = p.bg, bold = true }
+h.TabLineFill     = { bg = p.bg_dark }
+h.FloatBorder     = { fg = p.fg_gutter, bg = p.bg_dark }
+h.NonText         = { fg = p.fg_gutter }
+h.SpecialKey      = { fg = p.fg_gutter }
+h.EndOfBuffer     = { fg = p.bg }
+h.WildMenu        = { fg = p.fg,        bg = p.bg_visual, bold = true }
+h.Title           = { fg = p.type,      bold = true }
+h.Directory       = { fg = p.builtin }
+h.QuickFixLine    = { bg = p.bg_visual }
+h.ModeMsg         = { fg = p.fg,        bold = true }
+h.MoreMsg         = { fg = p.func }
+h.Question        = { fg = p.func }
+h.WarningMsg      = { fg = p.warning }
+h.ErrorMsg        = { fg = p.error }
 
 -- Section 3: Application (populated in Task 6)
