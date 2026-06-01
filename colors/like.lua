@@ -39,7 +39,7 @@ local p = {
   decorator    = "#3c5d5d",
   namespace    = "#555555",
   -- markdown
-  bg_md_header = "#b8d8f8",
+  bg_md_header = "#eef6ff",
   -- diagnostics / git
   error        = "#a61717",
   error_bg     = "#e3d2d2",
