@@ -38,6 +38,8 @@ local p = {
   entity       = "#800080",
   decorator    = "#3c5d5d",
   namespace    = "#555555",
+  -- markdown
+  bg_md_header = "#ddeeff",
   -- diagnostics / git
   error        = "#a61717",
   error_bg     = "#e3d2d2",
@@ -175,6 +177,21 @@ h["@text.reference"]        = { fg = "#aaaaaa" }
 h["@text.emphasis"]         = { fg = p.fg, italic = true }
 h["@text.strong"]           = { bold = true }
 h["@text.output"]           = { fg = "#888888" }
+
+-- Markdown headings
+h["@markup.heading.1.markdown"] = { fg = p.type,    bg = p.bg_md_header, bold = true }
+h["@markup.heading.2.markdown"] = { fg = p.type,    bg = p.bg_md_header, bold = true }
+h["@markup.heading.3.markdown"] = { fg = p.type,    bg = p.bg_md_header, bold = true }
+h["@markup.heading.4.markdown"] = { fg = p.type,    bg = p.bg_md_header, bold = true }
+h["@markup.heading.5.markdown"] = { fg = p.type,    bg = p.bg_md_header, bold = true }
+h["@markup.heading.6.markdown"] = { fg = p.type,    bg = p.bg_md_header, bold = true }
+h["@markup.heading.marker"]     = { fg = p.fg_dark, bg = p.bg_md_header }
+h.markdownH1 = { fg = p.type, bg = p.bg_md_header, bold = true }
+h.markdownH2 = { fg = p.type, bg = p.bg_md_header, bold = true }
+h.markdownH3 = { fg = p.type, bg = p.bg_md_header, bold = true }
+h.markdownH4 = { fg = p.type, bg = p.bg_md_header, bold = true }
+h.markdownH5 = { fg = p.type, bg = p.bg_md_header, bold = true }
+h.markdownH6 = { fg = p.type, bg = p.bg_md_header, bold = true }
 
 -- LSP diagnostics
 h.DiagnosticError            = { fg = p.error }
