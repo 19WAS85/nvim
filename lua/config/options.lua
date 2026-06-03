@@ -3,4 +3,3 @@
 -- Add any additional options here
 
 vim.opt.mouse = ""
-vim.opt.conceallevel = 0
