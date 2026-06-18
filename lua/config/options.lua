@@ -4,4 +4,3 @@
 
 vim.opt.mouse = ""
 vim.opt.listchars:append({ tab = "  " })
-vim.lsp.inlay_hint.enable(false)
