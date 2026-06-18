@@ -3,4 +3,4 @@
 -- Add any additional options here
 
 vim.opt.mouse = ""
-vim.opt.listchars:remove("tab")
+vim.opt.listchars:append({ tab = "  " })
