@@ -4,3 +4,5 @@
 
 vim.opt.mouse = ""
 vim.opt.listchars:append({ tab = "  " })
+
+vim.g.autoformat = false
